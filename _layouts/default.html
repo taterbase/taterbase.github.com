@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset=utf-8 />
+  <title> 
+
+    {% if page.title %} 
+      {{ page.title }} |
+    {% endif %}
+
+    George Shank, //TODO: Insert fancy programming title here.
+
+  </title>
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+  <div id="main">
+    <header>
+      <h1> I'll do anything for a dollar. </h1>
+    </header>
+    <nav role="navigation">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/">Home</a></li>
+        <li><a href="/">Home</a></li>
+        <li><a href="/">Home</a></li>
+      </ul>
+    </nav>
+    {{ content }}
+    <footer>
+      <p>@copy; Taterbase Inc. 2012 | All Rights Reserved. </p>
+    </footer>
+  </div>
+</body>
+</html>
