@@ -166,6 +166,10 @@ footer {
 code {
   background: #FFF6E8;
   color: #CD5555;
+  -moz-border-radius: 5px;
+  padding: 1px;
+  border-radius: 5px;
+  border: 1px solid #DDCBAB;
 }
 
 pre {
@@ -183,4 +187,10 @@ pre {
 
   -moz-border-radius: 5px;
   border-radius: 5px;
+
+  border: 1px solid #DDCBAB;
+}
+
+pre code{
+  border: 0;
 }
