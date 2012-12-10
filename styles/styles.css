@@ -117,8 +117,42 @@ footer {
     float: none;
   }
 
+
+  #profile {
+    float: left;
+  }
+
+  .post-list {
+    margin-left: 200px;
+  }
+
+  .post-list h2 {
+    font-size: 18px;
+    margin-bottom: 0px;
+  }
+
+  .post-list a {
+    margin-bottom: 0px;
+  }
+
   .post-detail {
+    clear: both;
+    margin-top: 90px;
     margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #main {
+    width: 90%;
+  }
+
+  .post-list {
+    text-align: center;
+  }
+
+  .post-detail h1 {
+    text-align: center;
   }
 }
 
