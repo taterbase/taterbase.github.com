@@ -97,9 +97,6 @@ nav {
 
 footer {
   font-size: 12px;
-  bottom: 5px;
-  width: 800px;
-  position: absolute;
 }
 
 .clear {
@@ -113,9 +110,6 @@ footer {
     width: 95%;
   }
 
-  footer {
-    width: 95%;
-  }
 }
 
 @media screen and (max-width: 650px) {
