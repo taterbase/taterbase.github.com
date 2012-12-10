@@ -1,0 +1,9 @@
+<div class="post-date">
+  {% if page %}
+    {{ page.date | date: "%B %d, %Y"}}
+  {% endif %}
+
+  {% if post %}
+    {{ post.date | date: "%B %d, %Y"}}
+  {% endif %}
+</div>
