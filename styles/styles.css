@@ -123,16 +123,14 @@ footer {
   }
 
   .post-list {
-    margin-left: 200px;
+    margin-left: 180px;
   }
 
   .post-list h2 {
     font-size: 18px;
-    margin-bottom: 0px;
   }
 
   .post-list a {
-    margin-bottom: 0px;
   }
 
   .post-detail {
@@ -156,6 +154,10 @@ footer {
   }
 
   .post-detail h1 {
+    text-align: center;
+  }
+
+  .post-date {
     text-align: center;
   }
 }
