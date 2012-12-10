@@ -29,6 +29,7 @@ body {
   color: #8b491c;
   background: #FEFFF9;
   border-top: 6px #faa85c solid;
+  text-align: center;
 }
 
 a:link {
@@ -41,12 +42,12 @@ a:visited {
   text-decoration: none;
 }
 
-a:hover {
-  text-decoration: underline;
+a:link h1 {
+  color: ##8b491c;
 }
 
-a:link img{
-  border-bottom: 0;
+a:visited h1 {
+  color: #8b491c;
 }
 
 .tagline {
@@ -55,10 +56,21 @@ a:link img{
   margin-top: -20px;
 }
 
+nav {
+  float: left;
+}
+
 #main { 
+  margin: 0 auto;
+  text-align: left;
+  width: 800px;
   font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, FreeSerif, serif;
   font-weight: lighter;
-  margin: 30px;
+}
+
+
+.post-detail {
+  margin-left: 250px;
 }
 
 .social-links {
@@ -85,6 +97,13 @@ a:link img{
 
 footer {
   font-size: 12px;
+  bottom: 5px;
+  width: 800px;
+  position: absolute;
+}
+
+.clear {
+  clear: both;
 }
 
 /******Media Queries*******/

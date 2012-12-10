@@ -17,7 +17,7 @@
 <body>
   <div id="main">
     <header>
-      <h1> George Shank </h1>
+      <a href="/"><h1>George Shank</h1></a>
       <div class="tagline">
         <h5> <i> I hear that guy is pretty cool... </i></h5>
       </div>
@@ -30,10 +30,24 @@
         <li><a href="mailto:shankga@gmail.com"><img src="/img/email.png" /></a></li>
       </ul>
       <div class="profile-pic">
-        <img src="img/mustache-crop.png" />
+        <img src="/img/mustache-crop.png" />
+      </div>
+      <div class="post-list">
+        <h2> Recent Posts </h2>
+        <ul>
+          {% for post in site.posts %}
+            <li>
+              <a href="{{ post.url }}">{{post.title}}</a>
+            </li>
+          {% endfor %}
+        </ul>
       </div>
     </nav>
     {{ content }}
+    <br />
+    <br />
+    <br />
+    <br />
     <footer>
       <div class="separator"></div>
       <p>&copy; Taterbase Inc. 2012 | All Rights Reserved. </p>
