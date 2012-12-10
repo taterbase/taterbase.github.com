@@ -43,7 +43,7 @@ a:visited {
 }
 
 a:link h1 {
-  color: ##8b491c;
+  color: #8b491c;
 }
 
 a:visited h1 {
@@ -169,4 +169,3 @@ code {
   -moz-border-radius: 5px;
   border-radius: 5px;
 }
-
