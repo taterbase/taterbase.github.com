@@ -8,7 +8,23 @@ It turns out <a href="http://npmjs.org">NPM</a> actually has an amazing solution
 
 I have some coffeescripts I need transpiled before each run so my package.json looks a little like this:
 
-<script src="https://gist.github.com/2689067.js"> </script>
+{% highlight json %}
+{
+  "name": "app-name",
+  "author": {
+    "name": "George Shank"
+  },
+  "version": "0.1.1-3",
+  "dependencies": {
+    "express": "2.5.9",
+    "jade": ">= 0.0.1"
+  },
+  "scripts": {
+    "start": "node app.js",
+    "prestart": "coffee -c public/js/*.coffee"
+  }
+}
+{% endhighlight %}
 
 There's a ton of potential here. You could do this with all your <a href="http://lesscss.org">Less files</a> as well or anything else you need done just before run time.
 
