@@ -108,12 +108,24 @@ footer {
 
 /******Media Queries*******/
 
-@media all and (min-width:40em) {
+@media screen and (max-width: 980px) {
+  #main {
+    width: 95%;
+  }
 
+  footer {
+    width: 95%;
+  }
 }
 
-@media screen and (min-width: 68em) {
+@media screen and (max-width: 650px) {
+  nav {
+    float: none;
+  }
 
+  .post-detail {
+    margin-left: 0;
+  }
 }
 
 /*****Pygments Extras*******/
