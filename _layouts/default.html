@@ -12,22 +12,30 @@
 
   </title>
   <link rel="stylesheet" href="/styles/styles.css" />
+  <link rel="stylesheet" href="/styles/pygments.css" />
 </head>
 <body>
   <div id="main">
     <header>
-      <h1> I'll do anything for a dollar. </h1>
+      <h1> George Shank </h1>
+      <div class="tagline">
+        <h5> <i> I hear that guy is pretty cool... </i></h5>
+      </div>
     </header>
     <nav role="navigation">
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/">Home</a></li>
-        <li><a href="/">Home</a></li>
-        <li><a href="/">Home</a></li>
+      <ul class="social-links">
+        <li><a href="http://twitter.com/taterbase"><img src="/img/twitter.png" /></a></li>
+        <li><a href="http://github.com/taterbase"><img src="/img/github.png" /></a></li>
+        <li><a href="http://linkedin.com/in/taterbase"><img src="/img/linked_in.png" /></a></li>
+        <li><a href="mailto:shankga@gmail.com"><img src="/img/email.png" /></a></li>
       </ul>
+      <div class="profile-pic">
+        <img src="img/mustache-crop.png" />
+      </div>
     </nav>
     {{ content }}
     <footer>
+      <div class="separator"></div>
       <p>&copy; Taterbase Inc. 2012 | All Rights Reserved. </p>
     </footer>
   </div>
