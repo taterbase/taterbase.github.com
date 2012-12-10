@@ -3,6 +3,7 @@ layout: default
 ---
 <div class="post-detail">
   {% for post in site.posts limit:1 %}
+  <span class="post-date">{{post.date | date: "%B %d, %Y"}}</span>
     <a href="{{post.url}}"><h1>{{post.title}}</h1></a>
     {{post.content}}
   {% endfor %}
