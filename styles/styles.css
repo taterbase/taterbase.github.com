@@ -9,7 +9,7 @@ html, body, div, object, iframe, fieldset {
         padding: 0; 
         border: 0;
 } 
-ol, ul { 
+ul { 
         list-style: none;
         margin: 0;
         padding: 0;
@@ -50,6 +50,14 @@ a:visited h1 {
   color: #8b491c;
 }
 
+a:link i {
+  color: #FC983D;
+}
+
+a:visited i {
+  color: #FC983D;
+}
+
 .tagline {
   color: #E4C0A7;
   margin-left: 35px;
@@ -58,6 +66,17 @@ a:visited h1 {
 
 nav {
   float: left;
+}
+
+.social-links li{
+  font-size: 29px;
+  margin-top: -8px;
+}
+
+.social-links li.envelope {
+  margin-left: 3px;
+  margin-top: -6px;
+  font-size: 24px;
 }
 
 #main { 
@@ -89,7 +108,8 @@ nav {
   height: 102px;
 }
 
-.separator {
+hr {
+  border: 0;
   border-bottom: 1px solid #DDCBAB;
   margin-top: 10px;
   margin-bottom: -10px;
@@ -135,8 +155,12 @@ footer {
 
   .post-detail {
     clear: both;
-    margin-top: 90px;
+    margin-top: 45px;
     margin-left: 0;
+  }
+
+  #title {
+    margin-top: -15px;
   }
 }
 
@@ -159,6 +183,19 @@ footer {
 
   .post-date {
     text-align: center;
+  }
+
+  nav {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  header {
+    text-align: center;
+  }
+
+  .tagline {
+    margin-left: 0px;
   }
 }
 
