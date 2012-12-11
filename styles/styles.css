@@ -181,11 +181,6 @@ footer {
     width: 90%;
   }
 
-  nav {
-    width: 85%;
-    margin: 0px auto;
-  }
-
   .social-links {
     margin-top: 0px;
   }
@@ -197,6 +192,10 @@ footer {
   .post-list a {
     font-size: 14px;
   }
+
+}
+
+@media screen and (max-width: 320px) {
 
   .post-detail h1 {
     text-align: center;
@@ -213,6 +212,7 @@ footer {
   .tagline {
     margin-left: 0px;
   }
+
 }
 
 /*****Pygments Extras*******/
