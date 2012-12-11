@@ -167,7 +167,7 @@ footer {
 
   .post-detail {
     clear: both;
-    margin-top: 45px;
+    margin-top: 55px;
     margin-left: 0;
   }
 
@@ -179,6 +179,11 @@ footer {
 @media screen and (max-width: 568px) {
   #main {
     width: 90%;
+  }
+
+  nav {
+    width: 85%;
+    margin: 0px auto;
   }
 
   .social-links {
