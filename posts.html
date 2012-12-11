@@ -1,0 +1,10 @@
+---
+layout: default
+---
+<div class='post-detail'>
+  <ul class="all-posts">
+    {% for post in site.posts %}
+    <li> <span class="abbr-date">{{ post.date | date: "%b %d, %Y"}}</span> | <a href="{{post.url}}">{{post.title}}</a></li>
+    {% endfor %}
+  </ul>
+</div>
