@@ -111,6 +111,15 @@ nav {
   height: 102px;
 }
 
+ul.all-posts li {
+  padding: 5px;
+}
+
+ul.all-posts li .abbr-date {
+  display: inline;
+  font-family: monospace;
+}
+
 hr {
   border: 0;
   border-bottom: 1px solid #DDCBAB;
