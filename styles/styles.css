@@ -68,6 +68,10 @@ nav {
   float: left;
 }
 
+.social-links {
+  margin-top: -6px;
+}
+
 .social-links li{
   height: 30px;
   font-size: 29px;
