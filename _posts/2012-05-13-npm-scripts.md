@@ -8,7 +8,7 @@ It turns out <a href="http://npmjs.org">NPM</a> actually has an amazing solution
 
 I have some coffeescripts I need transpiled before each run so my package.json looks a little like this:
 
-```json
+{% highlight json %}
 {
   "name": "app-name",
   "author": {
@@ -24,7 +24,7 @@ I have some coffeescripts I need transpiled before each run so my package.json l
     "prestart": "coffee -c public/js/*.coffee"
   }
 }
-```
+{% endhighlight %}
 
 There's a ton of potential here. You could do this with all your <a href="http://lesscss.org">Less files</a> as well or anything else you need done just before run time.
 
