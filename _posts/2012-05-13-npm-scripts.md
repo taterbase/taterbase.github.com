@@ -8,7 +8,7 @@ It turns out <a href="http://npmjs.org">NPM</a> actually has an amazing solution
 
 I have some coffeescripts I need transpiled before each run so my package.json looks a little like this:
 
-{% highlight json %}
+{% highlight json linenos=table %}
 {
   "name": "app-name",
   "author": {
