@@ -2,7 +2,7 @@
 layout: default
 ---
 <div class="post-detail">
-  {% for post in site.posts limit:5 %}
+  {% for post in site.posts limit:1 %}
     {% include date.html %}
     {% include title.html %}
     {{post.content}}
