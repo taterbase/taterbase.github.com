@@ -1,4 +1,4 @@
-markdown: recarpet
+markdown: redcarpet
 pygments: true
 auto: true
 permalink: /:title
