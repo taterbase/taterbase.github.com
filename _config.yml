@@ -1,4 +1,4 @@
-markdown: maruku
+markdown: recarpet2
 pygments: true
 auto: true
 permalink: /:title
