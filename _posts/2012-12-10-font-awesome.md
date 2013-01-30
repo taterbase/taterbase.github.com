@@ -2,7 +2,6 @@
 layout: post
 title: Font Awesome
 ---
-
 I can't believe I'm just finding this out but there is something called [Font Awesome](http://fortawesome.github.com/Font-Awesome/) which has **free** font glyphs. Font glyphs are rad because of two things. 
 
 1. They scale very well for high density screens
