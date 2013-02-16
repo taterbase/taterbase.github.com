@@ -2,7 +2,8 @@
 layout: post
 title: Math and Data
 ---
-*Thoughts on the forthcoming data revolution*
+
+*Thoughts on the forthcoming datacalypse*
 
 ##My Fear.
 
