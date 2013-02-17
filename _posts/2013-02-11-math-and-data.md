@@ -7,7 +7,7 @@ title: Math and Data
 
 ##My Fear.
 
-Let me start off by saying the two words **math** and **data** inspire a certain anxiety within myself. The roots of that discomfort are small but feel significant. I have never considered myself very savvy with higher level math. For some reason I just could never map Calculus efficiently to programming. I know the relationship exists and that there exists great value in utilizing it, I'm just still working on that part.
+Let me start off by saying the two words **math** and **data** inspire a certain anxiety within myself. The roots of that discomfort are small but feel significant. I have never considered myself very savvy with higher level math. For some reason I just could never map Calculus efficiently to programming. I know the relationship exists and that there can be great value in utilizing it, I'm just still working on that part.
 
 Data, or at least the concept of aggregated data, encourages that anxiety due to my perception that the only feasible way to make sense of data is with complex mathematical algorithms. Algorithms that I'm not quite ready to tackle. In my mind math goes hand in hand with data and that won't change any time soon. It's clear that if I wish to tackle the data problems I desire I will have to struggle and push for understanding in areas that leave me baffled. With that said let's embrace the fear, the uncertainty, and try to uncover why this is important.
 
