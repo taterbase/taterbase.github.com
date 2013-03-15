@@ -12,15 +12,15 @@ function sendMessageTo(name, message) {
   console.log(name + ', ' + message);
 }
 
-sendMessageTo('George', 'clean your room!');
+sendMessageTo('George', 'clean your room!'); //George, clean your room!
 ```
 
-So what I've just done here in mom.js is created a function that addresses a console.log to a name with a message. Super complex stuff. I then had it tell me to clean my room (over my dead body mom). But say, what if we wanted to tell me more than one thing. Like do the dishes, mow the lawn, perhaps even a bit of laundry?
+So what I've just done here in `mom.js` is created a function that addresses a console.log to a name with a message. Super complex stuff. I then had it tell me to clean my room (over my dead body mom). But say, what if we wanted to tell me more than one thing. Like do the dishes, mow the lawn, perhaps even a bit of laundry?
 
 ```javascript
-sendMessageTo('George', 'do the dishes');
-sendMessageTo('George', 'mow the lawn');
-sendMessageTo('George', 'do the laundry');
+sendMessageTo('George', 'do the dishes'); //George, do the dishes
+sendMessageTo('George', 'mow the lawn');  //George, mow the lawn
+sendMessageTo('George', 'do the laundry');//George, do the laundry
 ```
 
 Wow, she's furious and there's no way I'm doing all of that. It's unfortunate she had to specifically say to tell George that each time too. Recalling your own son's name is old school, computers should retain that info for us. Here comes partial application to the rescue!
@@ -28,7 +28,7 @@ Wow, she's furious and there's no way I'm doing all of that. It's unfortunate sh
 ```javascript
 var sendMessageToGeorge = sendMessageTo.bind(null, 'George');
 
-sendMessageToGeorge('be nicer to your mother');
+sendMessageToGeorge('be nicer to your mother'); //George, be nicer to your mother
 ```
 
 Hey, that's neat. Now she doesn't have to pass in a name each time. It's almost like she's got a direct line! Let's break down what happened here.
