@@ -3,7 +3,7 @@ layout: post
 title: Partial Application with JavaScript
 ---
 
-If you haven't heard [functional programming](http://en.wikipedia.org/wiki/Functional_programming) is all the rage these days. One of the more interesting aspects of functional programming is something called [partial application](http://en.wikipedia.org/wiki/Partial_application) which essentially comes down to preloading arguments in a function.
+If you haven't heard [functional programming](http://en.wikipedia.org/wiki/Functional_programming) is all the rage these days. One of the more interesting aspects of functional programming is something called [partial application](http://en.wikipedia.org/wiki/Partial_application) which essentially comes down to pre-loading arguments in a function.
 
 But George, if I'm going to pre-load functions with variables why don't I just use regular instance variables instead. Well, that's silly and a good way to write more boilerplate or even duplicate code. When you're using a language that supports [higher order functions](http://en.wikipedia.org/wiki/Higher-order_function) you should really take advantage of partial application (or [currying](http://stackoverflow.com/questions/36314/what-is-currying)) to make your code more polymorphic. Essentially it gives you more value from your function. Enough gibber gabber, let's write some code!
 
