@@ -37,7 +37,7 @@ JavaScript functions have a method called [bind](https://developer.mozilla.org/e
 
 The next argument I passed in was the *first* argument of the function itself. It doesn't have to stop at 1 either, you can pass in all of the variables for the function if you would like.
 
-```
+```javascript
 var sayHiToGeorge = sendMessageTo.bind(null, 'George', 'hi');
 sayHiToGeorge(); //George, hi
 ```
