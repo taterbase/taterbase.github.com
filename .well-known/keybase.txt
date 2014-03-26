@@ -1,0 +1,66 @@
+==================================================================
+https://keybase.io/taterbase
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://georgeshank.com
+  * I am taterbase (https://keybase.io/taterbase) on keybase.
+  * I have a public key with fingerprint F4CD 7F56 2D1B 9A6E 1F63  3088 3C9D 40E9 B135 9BEB
+
+To claim this, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "fingerprint": "f4cd7f562d1b9a6e1f6330883c9d40e9b1359beb",
+            "host": "keybase.io",
+            "key_id": "3c9d40e9b1359beb",
+            "uid": "bccc82bcdb30494316a1d8dcd4177000",
+            "username": "taterbase"
+        },
+        "service": {
+            "hostname": "georgeshank.com",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1395872571,
+    "expire_in": 157680000,
+    "prev": "8edd9fcfed3e63ae150afd51b4d23476f22fc48e1a1c06804b384673a0dbb123",
+    "seqno": 8,
+    "tag": "signature"
+}
+
+with the aforementioned key, yielding the PGP signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v0.1.1
+Comment: https://keybase.io/crypto
+
+yMH3AnicbZFdSBxXFMd3XU10o6sS08ZqaBmhLGFZZ+bO126tEIP1Ax9SJDFBYZk7
+9846VWd2Z8et26WCFKlWW8lCA7sa+xCSYLRvzQeVhK1WKBGLioVoI3nwIQRCQ6Cb
+0LQ13hHzlqfL/Z/f/3/O4fxa4nK4nb2zK73l5+gbzuVsrt/RDto/SlLQQAkqmKR6
+8P6janoYmxFT0y0qSKmcgkSVF1jEwIAsYEYVAKAlCSgBxNE4ABnAByCGlI/qNmK2
+g8RAOYb9mkE08glpiKhv4fv3C1BRFImFCoKA5gIcYASZQRJSEMeIIk3TNhjDpi73
+YUJbsoVNO5760kcROa4pRE7u9z5AwtgwwzjWLes9fsXoI/6IaViGYvSSYrdlRYK2
+10pEbPhzDEMHMSGo6YjsTgxxbMY0Q6eCDCEVS7NzGRDgJZHlRcZH4YGIZuKQZhO8
+KEhkTNpug+MkUsIIBVRFxQhgAciY4WlZRTwDOcQCThRUllUVTsKMzCg08XIQSJwg
+AplGEDIsIP1jOKobVFAiY8phEhnTwrps9Ztk64VsV77D6XYcKsizr+dwF5W9ueml
+e4WO4crSUddnz9+56S0sGH85t9sw17I+euH9me8ajxx+PbLdmjk2/ukfd1OJutUJ
+z4IyVb0x9Ww1c/Hf5adjD69/3DGZS618UPJhxuX/H/49O++SjUWqwunv+Gmr6ftp
+kBedWPSdF0s6Xbncn/lPdDZl3R76bXP6cnC6Mdn0+GRf9dnoNj3SXJGkXgnvDtdU
+FnV15h61fLVWFl/7q7j4l1tf/9P6xdL93U+qXOupxA8nPLXe456xuvzBwaFTbVvX
+Ttdsedzpht+v/ljx7Z0r5W7vfNWLssxcPd8WEpsfvLepH91N56KgaGlnI/2zd0rM
+dpyp/aZl5r8Cz05pun6gfG0yixb2AFYNC8c=
+=rz3Y
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/taterbase
+
+==================================================================
+
