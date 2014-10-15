@@ -3,15 +3,15 @@ layout: post
 title: How to Enable a MongoDB Replica Set on Travis
 ---
 [Travis](https://travis-ci.org) is a fantastic resource for developers building 
-open source projects because it provides a free build server to run your tests automatically.
-Every time you push new code to your repo on [Github](https://github.com) Travis can pull down
-the changes, run the tests, and update you when they fail. It also works with just about every imaginable language and provides many databases out of the box. 
+open source projects since they provide free build servers to run your tests automatically.
+Every time you push new code to your repos on [Github](https://github.com) Travis can pull down
+the changes, run the tests, and update you when they fail. It also works with just about every 
+imaginable language and provides quite a few databases out of the box. 
 
-When you're setting up Travis the defaults often work pretty well but sometimes you 
-need something a little more custom. While building [oplog-transform-tail](http://npm.im/oplog-transform-tail) 
-(a node module that keeps your MongoDB data in sync with a secondary data store in real time)
-I wanted to use Travis to make sure the code I was publishing was doing its job. A normal Travis config for a node
-project using MongoDB would look like this:
+When setting your project up for Travis a basic config can often work pretty well but sometimes you 
+need something a little more custom. I like to use Travis for most of my projects so while I was building 
+[oplog-transform-tail](http://npm.im/oplog-transform-tail) (a node module that keeps your MongoDB data in sync with a secondary data store in real time)
+I went ahead and created a somewhat standard Travis config file for a node project using MongoDB. That looks something like this:
 
 ```yaml
 #.travis.yml
@@ -23,16 +23,17 @@ services:
   - mongodb
 ```
 
-Here we just say that we're using node, we want to test on version `0.10` and `0.11`, 
-and under `services` we say we want access to MongoDB. The problem with this
+This config just says that we're using node, we want to test on version `0.10` and `0.11`, 
+and under `services` we say we want access to a MongoDB database. The problem with this
 setup is [oplog-transform-tail](http://npm.im/oplog-transform-tail) requires access to
 [MongoDB's oplog](http://docs.mongodb.org/manual/core/replica-set-oplog/). By default
-MongoDB starts as a single server with no replica set and it does not utilize the oplog.
+MongoDB starts as a single server with **no** replica set and as such does not utilize the oplog.
 
-To turn this feature on we just need to guide Travis a little bit more. Travis has
-a few [lifecycle entrypoints](http://docs.travis-ci.com/user/build-lifecycle/) that we can
-take advantage of to enhance the MongoDB database we're using. We'll use the `before_script`
-hook to make the changes before our tests run.
+To turn this feature on we just need to guide Travis a little bit and tell it to set our MongoDB
+up as a [replica set](http://docs.mongodb.org/manual/core/replication/). Luckily Travis has a few [lifecycle entrypoints](http://docs.travis-ci.com/user/build-lifecycle/) that we can
+take advantage of to do just that. Our use case just needs to happen before the `script` event (when the tests get run) 
+so we'll use the `before_script` hook to make the changes ensuring our database is set up properly for testing.
+Here's our new config for Travis:
 
 ```yaml
 #.travis.yml
@@ -68,4 +69,4 @@ Here we tell MongoDB to evaluate our command, in this case `rs.initiate()` which
 5. `sleep 15`
 Here we sleep for another 15 seconds to give MongoDB a chance to properly set up the replica set.
 
-And there you have it, now the MongoDB instance is running as a single server replica set and will write operations to the oplog.
+And there you have it, now the MongoDB instance is running as a single server replica set and will write operations to the oplog allowing the tests a chance to run properly.
