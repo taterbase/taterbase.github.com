@@ -11,7 +11,9 @@ imaginable language and provides quite a few databases out of the box.
 When setting your project up for Travis a basic config can often work pretty well but sometimes you 
 need something a little more custom. I like to use Travis for most of my projects so while I was building 
 [oplog-transform-tail](http://npm.im/oplog-transform-tail) (a node module that keeps your MongoDB data in sync with a secondary data store in real time)
-I went ahead and created a somewhat standard Travis config file for a node project using MongoDB. That looks something like this:
+I went ahead and created a somewhat standard Travis config file for a node project using MongoDB. 
+
+That looks something like this:
 
 ```yaml
 #.travis.yml
@@ -33,6 +35,7 @@ To turn this feature on we just need to guide Travis a little bit and tell it to
 up as a [replica set](http://docs.mongodb.org/manual/core/replication/). Luckily Travis has a few [lifecycle entrypoints](http://docs.travis-ci.com/user/build-lifecycle/) that we can
 take advantage of to do just that. Our use case just needs to happen before the `script` event (when the tests get run) 
 so we'll use the `before_script` hook to make the changes ensuring our database is set up properly for testing.
+
 Here's our new config for Travis:
 
 ```yaml
