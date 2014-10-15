@@ -157,6 +157,12 @@ footer {
 
 /******Media Queries*******/
 
+@media screen and (min-width: 650px) {
+  nav {
+    width: 250px;
+  }
+}
+
 @media screen and (max-width: 980px) {
   #main {
     width: 95%;
@@ -279,4 +285,13 @@ pre code{
 
 blockquote {
   font-style: italic
+}
+
+#hire-me {
+  background-color: #FFF6E8;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-left: 15px;
 }
