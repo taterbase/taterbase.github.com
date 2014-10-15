@@ -44,7 +44,7 @@ services:
   - mongodb
 # make mongodb a replica set
 before_script:
-  - echo "replSet = set0" | sudo tee -a /etc/mongodb.conf
+  - echo "replSet = myReplSetName" | sudo tee -a /etc/mongodb.conf
   - sudo service mongodb restart
   - sleep 20
   - mongo --eval 'rs.initiate()'
