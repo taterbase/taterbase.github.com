@@ -56,12 +56,12 @@
         <ul>
           {% for post in site.posts limit: 3%}
             <li>
-              <a href="{{ post.url }}">{{post.title}}</a>
+              <a href="{{ post.url }}">{{post.title | truncate: 25}}</a>
             </li>
           {% endfor %}
           {% if site.posts.size > 3 %}
             <li>
-              <a class="more" href="/posts.html">more...</a>
+            <a class="more" href="/posts.html"><strong>more &rarr;</strong></a>
             </li>
           {% endif %}
         </ul>
