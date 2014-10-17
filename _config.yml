@@ -3,3 +3,6 @@ pygments: true
 auto: true
 permalink: /:title
 include: .well-known
+name: George Shank
+description: Software and stuff
+url: http://georgeshank.com

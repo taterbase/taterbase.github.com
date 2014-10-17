@@ -11,7 +11,7 @@
       {{ page.title }} |
     {% endif %}
 
-    George Shank
+    {{ site.name }}
 
   </title>
   <link rel="stylesheet" href="/styles/styles.css" />
@@ -34,9 +34,9 @@
 <body>
   <div id="main">
     <header>
-      <a href="/"><h1>George Shank</h1></a>
+      <a href="/"><h1>{{ site.name }}</h1></a>
       <div class="tagline">
-        <h5> <i> Software and stuff </i></h5>
+        <h5> <i> {{ site.description }}</i></h5>
       </div>
     </header>
     <nav role="navigation">
