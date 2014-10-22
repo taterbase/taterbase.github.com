@@ -18,6 +18,6 @@ The first tinier problem was translating [Mongo's oplog](http://docs.mongodb.org
 Now that we can translate oplog docs we just need to hook up to the oplog and tail it to perform these changes in real-time. I created [oplog-transform-tail](https://npmjs.org/package/oplog-transform-tail) to do just that. It's a simple composition of the great [mongo-oplog](https://npmjs.org/package/mongo-oplog) lib as well as oplog-transform. We're already reaping the benefits of breaking these pieces out by being able to build them up in new useful ways.
 
 ##Wrapping up
-Finally we can solve the overarching problem we set out for in the beginning, syncing dat with MongoDB, and the result is [dat-oplog](https://npmjs.org/package/dat-oplog). 
+Finally we can solve the overarching problem we set out for in the beginning, syncing dat with MongoDB, and the result is [dat-oplog](https://npmjs.org/package/dat-oplog). Dat has hooks you can plug into with your own functionality and dat-oplog makes use of [listen](https://github.com/maxogden/dat/blob/master/docs/js-api.md#hooks). Now using oplog-transform-tail we can push updates to dat every time a document changes in Mongo.
 
 The code needed to create dat-oplog was relatively small since we can leverage the previous modules. Each module being responsible for its own functionality keeps the individual code bases small which can reduce bugs and increase transparency into what is happening. Building a solution this way has a lot of advantages and I think it's a worthwhile exercise when tackling any large problem.
