@@ -87,12 +87,12 @@ nav {
 }
 
 .social-links {
-  margin-top: -6px;
+  margin-top: -15px;
 }
 
 .social-links li{
-  height: 30px;
-  font-size: 29px;
+  height: 23px;
+  font-size: 22px;
 }
 
 .social-links li.envelope {
