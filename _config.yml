@@ -4,5 +4,5 @@ auto: true
 permalink: /:title
 include: .well-known
 name: George Shank
-description: Software and stuff
+description: Do everything with love and patience.
 url: https://georgeshank.com
